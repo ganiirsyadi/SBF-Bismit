@@ -1,0 +1,47 @@
+.body
+	font-family: 'Rubik'
+
+.interested
+	background: url(./Rectangle.png) (center / cover) no-repeat fixed
+	height: 100vh
+
+	.title
+		border-bottom: 0.5rem solid black
+
+	img:hover
+		transform: scale(1.1)
+		transition: all .2s ease-in-out
+
+	button
+		border-radius: 0
+		background: white
+
+		&:hover
+			transition: ease-in-out 0.3s
+			box-shadow: 7px 7px 7px rgba(0, 0, 0, 1)
+			background: white
+
+.location
+	height: 60vh
+
+.location-box
+	background: rgb(255, 183, 54)
+
+	h1
+		border-bottom: 0.5rem solid black
+
+@media (max-width: 576px)
+	.interested h2
+		visibility: hidden
+
+@media (min-width: 768px)
+	.interested .title
+		font-size: 5em
+
+@media (max-width: 768px)
+	.location-box
+		h1
+			font-size: 2em
+			border-bottom: 0.3rem black solid
+		p
+			font-size: 1.2em
