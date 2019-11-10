@@ -111,6 +111,16 @@
   .interested h2 {
     visibility: hidden;
   }
+
+  .location .location-in .location-box h1 {
+    font-size: 3em;
+  }
+  .location .location-in .location-box img {
+    width: 20%;
+  }
+  .location .location-in .location-box p {
+    font-size: 1.5em;
+  }
 }
 @media (min-width: 768px) {
   .interested .title {
