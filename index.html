@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Bismit</title>
@@ -13,8 +13,62 @@
 
 <body>
     <section class="main-page">
-        <div class="container">
-
+        <div class="main-page-in m-0 p-0">
+            <nav class="navbar navbar-expand-sm bg-transparent">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3 active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link inactive">Projects</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">BEM</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#" class="nav-link">Hire US!</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-title d-flex flex-column justify-content-center align-items-center container">
+                <a href="https://bem.cs.ui.ac.id/"><img class="mb-2" src="./bem.png" alt="" srcset=""></a>
+                <h1 class="mb-3">BUSINESS AND PARTNERSHIP BUREAU</h1>
+                <H2 class="mb-5">BEM Fasilkom UI 2019</H2>
+                <a href="">
+                    <button class="btn-lg btn-warning">
+                            HIRE US
+                        </button>
+                </a>
+            </div>
+        </div>
+        <div id="main-carousel" class="carousel slide" data-ride='carousel'>
+            <ul class="carousel-indicators">
+                <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#main-carousel" data-slide-to="1"></li>
+                <li data-target="#main-carousel" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./mainpage.png" alt="" srcset="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Rectangle.png" alt="" srcset="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./mainpage.png" alt="" srcset="">
+                </div>
+            </div>
         </div>
 
     </section>

@@ -30,9 +30,67 @@
 	h1
 		border-bottom: 0.5rem solid black
 
+.main-page
+	position: relative
+	.main-page-in
+		position: absolute
+		z-index: 10
+		width: 100%
+		height: 100vh
+	.carousel-indicators li
+		width: 10px
+		height: 10px
+		border-radius: 100%
+		cursor: pointer
+	.carousel-inner img
+		height: 100vh
+		width: 100vw
+	nav
+		width: 100%
+		height: 10%
+		a
+			font-size: 1.2rem
+			color: #ffffff
+			font-family: 'Muli', sans-serif
+		.active a
+			color: #FFB736
+	.main-title
+		height: 90%
+		width: 100vw
+		text-align: center
+		img:hover
+			cursor: pointer
+		h1,h2
+			color: #ffffff
+			font-weight: bold
+			text-shadow: 1px 1px 1px black
+		h1
+			font-size: 4em
+		h2
+			font-size: 2.5em
+		button
+			border-radius: 0
+			background: #FFB736
+			color: #ffffff
+			font-weight: bold
+			padding: 0.7em 3em
+			border: none
+			&:hover
+				background: #df9f29
+				cursor: pointer
+
 @media (max-width: 576px)
+	.main-page 
+		.main-title 
+			height: 80vh
+			h1
+				font-size: 2.5em
+			h2
+				font-size: 2em
 	.interested h2
 		visibility: hidden
+	
+
 
 @media (min-width: 768px)
 	.interested .title
@@ -45,3 +103,4 @@
 			border-bottom: 0.3rem black solid
 		p
 			font-size: 1.2em
+

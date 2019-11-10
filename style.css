@@ -34,7 +34,80 @@
   border-bottom: 0.5rem solid black;
 }
 
+.main-page {
+  position: relative;
+}
+.main-page .main-page-in {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+}
+.main-page .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.main-page .carousel-inner img {
+  height: 100vh;
+  width: 100vw;
+}
+.main-page nav {
+  width: 100%;
+  height: 10%;
+}
+.main-page nav a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Muli", sans-serif;
+}
+.main-page nav .active a {
+  color: #FFB736;
+}
+.main-page .main-title {
+  height: 90%;
+  width: 100vw;
+  text-align: center;
+}
+.main-page .main-title img:hover {
+  cursor: pointer;
+}
+.main-page .main-title h1, .main-page .main-title h2 {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.main-page .main-title h1 {
+  font-size: 4em;
+}
+.main-page .main-title h2 {
+  font-size: 2.5em;
+}
+.main-page .main-title button {
+  border-radius: 0;
+  background: #FFB736;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.7em 3em;
+  border: none;
+}
+.main-page .main-title button:hover {
+  background: #df9f29;
+  cursor: pointer;
+}
+
 @media (max-width: 576px) {
+  .main-page .main-title {
+    height: 80vh;
+  }
+  .main-page .main-title h1 {
+    font-size: 2.5em;
+  }
+  .main-page .main-title h2 {
+    font-size: 2em;
+  }
+
   .interested h2 {
     visibility: hidden;
   }
