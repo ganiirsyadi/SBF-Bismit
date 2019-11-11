@@ -124,7 +124,29 @@
     font-size: 1.5em;
   }
 }
-@media (orientation: landscape) and (max-width: 812px) and (min-width: 640px) {
+@media (min-width: 576px) and (max-width: 990px) {
+  .main-page .main-title h1 {
+    font-size: 2.5em;
+  }
+  .main-page .main-title h2 {
+    font-size: 1.8em;
+  }
+
+  .location .location-box h1 {
+    font-size: 2em;
+    border-bottom: 0.2em solid black;
+  }
+  .location .location-box p {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    background: black;
+    padding: 1em;
+  }
+}
+@media (orientation: landscape) and (max-width: 990px) and (min-width: 640px) and (max-height: 450px) {
   .main-page nav a {
     font-size: 1em;
   }
