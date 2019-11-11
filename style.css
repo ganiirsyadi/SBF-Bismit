@@ -2,39 +2,6 @@
   font-family: "Rubik";
 }
 
-.interested {
-  background: url(./Rectangle.png) center/cover no-repeat fixed;
-  height: 100vh;
-}
-.interested .title {
-  border-bottom: 0.5rem solid black;
-}
-.interested img:hover {
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-}
-.interested button {
-  border-radius: 0;
-  background: white;
-  border: none;
-}
-.interested button:hover {
-  transition: ease-in-out 0.3s;
-  box-shadow: 7px 7px 7px black;
-  background: white;
-}
-
-.location {
-  height: 60vh;
-}
-
-.location-box {
-  background: #ffb736;
-}
-.location-box h1 {
-  border-bottom: 0.5rem solid black;
-}
-
 .main-page {
   position: relative;
 }
@@ -99,6 +66,67 @@
   cursor: pointer;
 }
 
+.why-us {
+  height: 100vh;
+  background: #989CB6;
+}
+.why-us h1 {
+  text-align: center;
+  padding: 1em;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #292533;
+}
+.why-us .why-us-in {
+  height: 60vh;
+}
+.why-us .why-us-in .circle {
+  text-align: center;
+  background: #ffffff;
+  width: 14em;
+  height: 14em;
+}
+.why-us .why-us-in .line-in {
+  border: 0.3em white solid;
+  background: #ffffff;
+  width: 100%;
+}
+
+.interested {
+  background: url(./Rectangle.png) center/cover no-repeat fixed;
+  height: 100vh;
+}
+.interested .title {
+  border-bottom: 0.5rem solid black;
+}
+.interested img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.interested button {
+  border-radius: 0;
+  background: white;
+  border: none;
+}
+.interested button:hover {
+  transition: ease-in-out 0.3s;
+  box-shadow: 7px 7px 7px black;
+  background: white;
+  text-decoration: none;
+}
+
+.location {
+  height: 60vh;
+}
+
+.location-box {
+  background: #ffb736;
+}
+.location-box h1 {
+  border-bottom: 0.5rem solid black;
+}
+
 @media (max-width: 576px) {
   .main-page .main-title {
     height: 80vh;
@@ -124,6 +152,11 @@
     font-size: 1.5em;
   }
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .interested .interested-in h2 {
+    visibility: hidden;
+  }
+}
 @media (min-width: 576px) and (max-width: 990px) {
   .main-page .main-title h1 {
     font-size: 2.5em;
@@ -145,8 +178,33 @@
     background: black;
     padding: 1em;
   }
+
+  .why-us h1 {
+    padding: 0.5em;
+  }
+  .why-us .why-us-in {
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+  .why-us .why-us-in .circle {
+    width: 9em !important;
+    height: 9em !important;
+    padding: 1em;
+  }
+  .why-us .why-us-in .circle h2 {
+    font-size: 1.3em !important;
+    margin: 0;
+  }
+  .why-us .why-us-in .line-in {
+    border: 0.3em white solid;
+    background: #ffffff;
+    height: 100%;
+    width: 0.5em;
+    margin: auto;
+  }
 }
-@media (orientation: landscape) and (max-width: 990px) and (min-width: 640px) and (max-height: 450px) {
+@media (orientation: landscape) and (min-width: 640px) and (max-width: 990px) and (max-height: 555px) {
   .main-page nav a {
     font-size: 1em;
   }
@@ -154,17 +212,35 @@
     width: 50%;
   }
   .main-page .main-title h1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .main-page .main-title h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 1em !important;
   }
   .main-page .main-title button {
     font-size: 1em;
   }
+
+  .why-us h1 {
+    font-size: 2em;
+  }
 }
-@media (min-width: 768px) and (max-width: 768px) {
+@media (orientation: landscape) and (min-width: 640px) and (max-width: 990px) {
+  .why-us .container {
+    min-width: 99vw;
+  }
+  .why-us .why-us-in .circle {
+    width: 10em;
+    height: 10em;
+    padding: 1em;
+  }
+  .why-us .why-us-in .circle h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
   .interested .title {
     font-size: 5em;
   }
