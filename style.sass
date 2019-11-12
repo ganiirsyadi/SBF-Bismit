@@ -1,11 +1,12 @@
 .body
 	font-family: 'Rubik'
-
 .main-page
 	position: relative
+	width: 100vw
+	background: #857e91
 	.main-page-in
 		position: absolute
-		z-index: 10
+		z-index: 2
 		width: 100%
 		height: 100vh
 	.carousel-indicators li
@@ -76,53 +77,57 @@
 .testimonials
 	height: 100vh
 	position: relative
+	background: #666666
 	.testimonials-in
-		width: 100vw !important
-		height: 100vh
 		position: absolute
-		z-index: 10
-		h1
-			font-weight: bold
-			font-size: 4vw
-			text-align: center
-			margin: 0.5em auto
-			padding-bottom: 0.2em
-			border-bottom: 0.1em solid black
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-		.quotes
-			position: absolute
-			bottom: 8em
-			height: auto
-			width: 70vw
-			h2
-				font-family: 'Muli', sans-serif
-				font-weight: bold
-				text-align: center
-				font-style: italic
-				font-size: 3vw
+		z-index: 2
+		width: 100%
+		.testimonials-title
+			position: block
+			margin-top: 5vh
+			height: 10vh
+			h1
 				color: #ffffff
-				margin: 8vh 0
-			.quote-left
-				align-self: flex-start
-				height: 8vh
-				width: auto
-			.quote-right
-				transform: rotate(180deg)
-				height: 8vh
-				width: auto
-				align-self: flex-end
-	.carousel-inner img
-		height: 100vh
-		width: 100vw
-	.carousel-control-prev-icon, .carousel-control-next-icon
-		height: 4em
-		width: 4em
-		background: url(./arrow.png) no-repeat center/cover
-	.carousel-control-prev-icon
-		transform: rotate(-90deg)
-	.carousel-control-next-icon
-		transform: rotate(90deg)
-
+				font-size: 4vw
+				padding-bottom: 1vw
+				border-bottom: 0.15em #ffffff solid
+				font-weight: bold
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+		.quotes
+			position: block
+			height: 85vh
+			width: 80vw
+			.quotes-in
+				height: 60%
+				h2
+					font-size: 3vw
+					color: #ffffff
+					text-align: center
+				.quote-left
+					align-self: flex-start
+					width: 5vw
+					height: auto
+				.quote-right
+					align-self: flex-end
+					width: 5vw
+					height: auto
+					transform: rotate(180deg)
+	.carousel-item
+		img
+			height: 100vh
+	#carousel-testimonials
+		a
+			position: absolute
+			width: 10vw
+			z-index: 4
+			.carousel-control-prev-icon, .carousel-control-next-icon
+				background-image: url(./arrow.png)
+				width: 3vw
+				height: 3vw
+			.carousel-control-prev-icon
+				transform: rotate(-90deg)
+			.carousel-control-next-icon
+				transform: rotate(90deg)
 
 .interested
 	background: url(./Rectangle.png) (center / cover) no-repeat fixed
@@ -167,6 +172,19 @@
 				font-size: 2.5em
 			h2
 				font-size: 1.5em
+	#carousel-testimonials
+		a .carousel-control-prev-icon, .carousel-control-next-icon
+			width: 4vw
+			height: 4vw
+	.testimonials
+		.testimonials-title
+			h1
+				font-size: 9vw !important
+		.quotes
+			.quotes-in
+				h2
+					font-size: 6vw !important
+
 	.interested h2
 		visibility: hidden
 	.location .location-in
@@ -190,6 +208,14 @@
 				font-size: 2.5em
 			h2
 				font-size: 1.8em
+	.testimonials
+		.testimonials-title
+			h1
+				font-size: 7vw !important
+		.quotes
+			.quotes-in
+				h2
+					font-size: 5vw !important
 	.location
 		.location-box
 			h1

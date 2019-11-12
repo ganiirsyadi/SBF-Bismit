@@ -4,10 +4,12 @@
 
 .main-page {
   position: relative;
+  width: 100vw;
+  background: #857e91;
 }
 .main-page .main-page-in {
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
   height: 100vh;
 }
@@ -96,61 +98,67 @@
 .testimonials {
   height: 100vh;
   position: relative;
+  background: #666666;
 }
 .testimonials .testimonials-in {
-  width: 100vw !important;
-  height: 100vh;
   position: absolute;
-  z-index: 10;
+  z-index: 2;
+  width: 100%;
 }
-.testimonials .testimonials-in h1 {
-  font-weight: bold;
+.testimonials .testimonials-in .testimonials-title {
+  position: block;
+  margin-top: 5vh;
+  height: 10vh;
+}
+.testimonials .testimonials-in .testimonials-title h1 {
+  color: #ffffff;
   font-size: 4vw;
-  text-align: center;
-  margin: 0.5em auto;
-  padding-bottom: 0.2em;
-  border-bottom: 0.1em solid black;
+  padding-bottom: 1vw;
+  border-bottom: 0.15em #ffffff solid;
+  font-weight: bold;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .testimonials .testimonials-in .quotes {
-  position: absolute;
-  bottom: 8em;
-  height: auto;
-  width: 70vw;
+  position: block;
+  height: 85vh;
+  width: 80vw;
 }
-.testimonials .testimonials-in .quotes h2 {
-  font-family: "Muli", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
+.testimonials .testimonials-in .quotes .quotes-in {
+  height: 60%;
+}
+.testimonials .testimonials-in .quotes .quotes-in h2 {
   font-size: 3vw;
   color: #ffffff;
-  margin: 8vh 0;
+  text-align: center;
 }
-.testimonials .testimonials-in .quotes .quote-left {
+.testimonials .testimonials-in .quotes .quotes-in .quote-left {
   align-self: flex-start;
-  height: 8vh;
-  width: auto;
+  width: 5vw;
+  height: auto;
 }
-.testimonials .testimonials-in .quotes .quote-right {
-  transform: rotate(180deg);
-  height: 8vh;
-  width: auto;
+.testimonials .testimonials-in .quotes .quotes-in .quote-right {
   align-self: flex-end;
+  width: 5vw;
+  height: auto;
+  transform: rotate(180deg);
 }
-.testimonials .carousel-inner img {
+.testimonials .carousel-item img {
   height: 100vh;
-  width: 100vw;
 }
-.testimonials .carousel-control-prev-icon, .testimonials .carousel-control-next-icon {
-  height: 4em;
-  width: 4em;
-  background: url(./arrow.png) no-repeat center/cover;
+.testimonials #carousel-testimonials a {
+  position: absolute;
+  width: 10vw;
+  z-index: 4;
 }
-.testimonials .carousel-control-prev-icon {
+.testimonials #carousel-testimonials a .carousel-control-prev-icon, .testimonials #carousel-testimonials a .carousel-control-next-icon {
+  background-image: url(./arrow.png);
+  width: 3vw;
+  height: 3vw;
+}
+.testimonials #carousel-testimonials a .carousel-control-prev-icon {
   transform: rotate(-90deg);
 }
-.testimonials .carousel-control-next-icon {
+.testimonials #carousel-testimonials a .carousel-control-next-icon {
   transform: rotate(90deg);
 }
 
@@ -204,6 +212,18 @@
     font-size: 1.5em;
   }
 
+  #carousel-testimonials a .carousel-control-prev-icon, #carousel-testimonials .carousel-control-next-icon {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .testimonials .testimonials-title h1 {
+    font-size: 9vw !important;
+  }
+  .testimonials .quotes .quotes-in h2 {
+    font-size: 6vw !important;
+  }
+
   .interested h2 {
     visibility: hidden;
   }
@@ -229,6 +249,13 @@
   }
   .main-page .main-title h2 {
     font-size: 1.8em;
+  }
+
+  .testimonials .testimonials-title h1 {
+    font-size: 7vw !important;
+  }
+  .testimonials .quotes .quotes-in h2 {
+    font-size: 5vw !important;
   }
 
   .location .location-box h1 {
