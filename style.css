@@ -47,6 +47,7 @@
 .main-page .main-title h1, .main-page .main-title h2 {
   color: #ffffff;
   font-weight: bold;
+  font-family: "Rubik", sans-serif;
   text-shadow: 1px 1px 1px black;
 }
 .main-page .main-title h1 {
@@ -68,14 +69,40 @@
   cursor: pointer;
 }
 
+.finished-projects {
+  height: fit-content;
+  padding-bottom: 4em;
+  background: #C3C1CC;
+}
+.finished-projects h1 {
+  font-family: "Rubik", sans-serif;
+  margin: 2vw auto;
+  font-weight: bold !important;
+  font-size: 9em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.finished-projects h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.finished-projects #finished-special {
+  display: none;
+}
 .why-us {
   height: 100vh;
   background: #989CB6;
 }
-.why-us h1 {
+.why-us .why-us-title h1 {
   text-align: center;
-  padding: 1em;
   font-size: 3em;
+  padding: 0.7em 0 0.2em 0;
+  border-bottom: 0.15em solid black;
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #292533;
@@ -88,6 +115,11 @@
   background: #ffffff;
   width: 14em;
   height: 14em;
+  padding: 1em;
+}
+.why-us .why-us-in .circle h2 {
+  font-family: "Muli";
+  font-weight: bold;
 }
 .why-us .why-us-in .line-in {
   border: 0.3em white solid;
@@ -113,6 +145,7 @@
 .testimonials .testimonials-in .testimonials-title h1 {
   color: #ffffff;
   font-size: 4vw;
+  font-family: "Rubik", sans-serif;
   padding-bottom: 1vw;
   border-bottom: 0.15em #ffffff solid;
   font-weight: bold;
@@ -130,6 +163,9 @@
   font-size: 3vw;
   color: #ffffff;
   text-align: center;
+  font-style: italic;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
 }
 .testimonials .testimonials-in .quotes .quotes-in .quote-left {
   align-self: flex-start;
@@ -193,11 +229,10 @@
 .location {
   height: 60vh;
 }
-
-.location-box {
+.location .location-box {
   background: #ffb736;
 }
-.location-box h1 {
+.location .location-box h1 {
   border-bottom: 0.5rem solid black;
 }
 
@@ -215,6 +250,16 @@
   #carousel-testimonials a .carousel-control-prev-icon, #carousel-testimonials .carousel-control-next-icon {
     width: 4vw;
     height: 4vw;
+  }
+
+  .finished-projects .finished-in h1 {
+    font-size: 7em;
+  }
+  .finished-projects .finished-in h2 {
+    font-size: 2em;
+  }
+  .finished-projects .finished-logo img {
+    margin: 1em 0;
   }
 
   .testimonials .testimonials-title h1 {
