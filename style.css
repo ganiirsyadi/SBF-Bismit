@@ -361,8 +361,33 @@
     font-size: 1em;
   }
 
+  .finished-projects .finished-in .container {
+    width: 100vw;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .finished-projects h1, .finished-projects h2 {
+    display: none;
+  }
+  .finished-projects #finished-special {
+    display: block;
+    margin-top: 1em;
+  }
+  .finished-projects .finished-logo img {
+    width: auto;
+    height: 4.5em;
+    margin: 0 0.5em;
+  }
+
   .why-us h1 {
     font-size: 2em;
+  }
+
+  .testimonials .testimonials-title h1 {
+    font-size: 9vh !important;
+  }
+  .testimonials .quotes .quotes-in h2 {
+    font-size: 6vh !important;
   }
 }
 @media (orientation: landscape) and (min-width: 640px) and (max-width: 990px) {
