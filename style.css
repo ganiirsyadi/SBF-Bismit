@@ -94,7 +94,7 @@
 }
 
 .why-us {
-  height: fit-content;
+  height: 90vh;
   background: #989CB6;
 }
 .why-us .why-us-title h1 {
@@ -108,7 +108,7 @@
   color: #292533;
 }
 .why-us .why-us-in {
-  height: fit-content !important;
+  height: 80vh;
 }
 .why-us .why-us-in .circle {
   text-align: center;
@@ -120,6 +120,7 @@
 .why-us .why-us-in .circle h2 {
   font-family: "Muli";
   font-weight: bold;
+  margin: 0 !important;
 }
 .why-us .why-us-in .line-in {
   border: 0.3em white solid;
@@ -211,7 +212,6 @@
   transition: all 0.2s ease-in-out;
 }
 .interested button {
-  border-radius: 0;
   background: white;
   border: none;
 }
@@ -263,8 +263,12 @@
     margin: 1em 0;
   }
 
+  .why-us {
+    height: fit-content;
+  }
+
   .testimonials .testimonials-in {
-    height: 70vh;
+    height: 60vh;
   }
   .testimonials .testimonials-title h1 {
     font-size: 9vw !important;
@@ -273,7 +277,7 @@
     font-size: 6vw !important;
   }
   .testimonials .carousel-item img {
-    height: 70vh;
+    height: 60vh;
   }
 
   .interested h2 {
@@ -386,6 +390,9 @@
     margin: 0 0.5em;
   }
 
+  .why-us {
+    height: fit-content;
+  }
   .why-us h1 {
     font-size: 2em;
   }
