@@ -52,6 +52,40 @@
 				background: #df9f29
 				cursor: pointer
 
+.who-are-we
+	height: fit-content
+	background: #292B36
+	.who-are-we-in
+		padding: 3rem 3rem 4rem 5rem
+		h1
+			font-size: 4em
+			font-family: 'Rubik', sans-serif
+			font-weight: bold
+			color: #ffffff
+			margin-bottom: 1em
+		.who-quote
+			width: 100%
+			justify-content: flex-end
+			h2
+				text-align: end
+				font-family: 'Muli', sans-serif
+				font-weight: bold
+				font-style: italic
+				color: #fff
+				margin: 1.2em 0
+				height: 100%
+				width: 60%
+				font-size: 2.2em
+			img
+				height: 2em
+				width: auto
+			.who-left
+				align-self: flex-start 
+			.who-right
+				align-self: flex-end 
+			
+
+
 .finished-projects
 	height: fit-content
 	padding-bottom: 4em
@@ -210,6 +244,21 @@
 		a .carousel-control-prev-icon, .carousel-control-next-icon
 			width: 4vw
 			height: 4vw
+	.who-are-we
+		.who-are-we-in
+			padding: 2em
+			h1
+				text-align: center
+				font-size: 2em
+			.who-quote
+				width: 100%
+				justify-content: center
+				h2
+					text-align: center
+					font-size: 1.2em
+					width:100%
+				img
+					height: 1em
 	.finished-projects
 		.finished-in
 			h1
@@ -248,6 +297,18 @@
 
 // Ipad
 @media  (min-width: 576px) and (max-width: 768px)
+	.who-are-we
+		.who-are-we-in
+			h1
+				text-align: center
+			.who-quote
+				width: 100%
+				justify-content: center
+				h2
+					text-align: center
+					font-size: 2em
+					width:100%
+
 	.interested
 			.interested-in
 				h2

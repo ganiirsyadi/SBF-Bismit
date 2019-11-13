@@ -68,6 +68,46 @@
   cursor: pointer;
 }
 
+.who-are-we {
+  height: fit-content;
+  background: #292B36;
+}
+.who-are-we .who-are-we-in {
+  padding: 3rem 3rem 4rem 5rem;
+}
+.who-are-we .who-are-we-in h1 {
+  font-size: 4em;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+.who-are-we .who-are-we-in .who-quote {
+  width: 100%;
+  justify-content: flex-end;
+}
+.who-are-we .who-are-we-in .who-quote h2 {
+  text-align: end;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  margin: 1.2em 0;
+  height: 100%;
+  width: 60%;
+  font-size: 2.2em;
+}
+.who-are-we .who-are-we-in .who-quote img {
+  height: 2em;
+  width: auto;
+}
+.who-are-we .who-are-we-in .who-quote .who-left {
+  align-self: flex-start;
+}
+.who-are-we .who-are-we-in .who-quote .who-right {
+  align-self: flex-end;
+}
+
 .finished-projects {
   height: fit-content;
   padding-bottom: 4em;
@@ -253,6 +293,26 @@
     height: 4vw;
   }
 
+  .who-are-we .who-are-we-in {
+    padding: 2em;
+  }
+  .who-are-we .who-are-we-in h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .who-are-we .who-are-we-in .who-quote {
+    width: 100%;
+    justify-content: center;
+  }
+  .who-are-we .who-are-we-in .who-quote h2 {
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  .who-are-we .who-are-we-in .who-quote img {
+    height: 1em;
+  }
+
   .finished-projects .finished-in h1 {
     font-size: 7em;
   }
@@ -295,6 +355,19 @@
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+  .who-are-we .who-are-we-in h1 {
+    text-align: center;
+  }
+  .who-are-we .who-are-we-in .who-quote {
+    width: 100%;
+    justify-content: center;
+  }
+  .who-are-we .who-are-we-in .who-quote h2 {
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+  }
+
   .interested .interested-in h2 {
     visibility: hidden;
   }
