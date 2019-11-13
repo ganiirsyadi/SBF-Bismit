@@ -37,8 +37,10 @@
 }
 .main-page .main-title {
   height: 90%;
-  width: 100vw;
+  width: 100%;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .main-page .main-title img:hover {
   cursor: pointer;
@@ -240,6 +242,46 @@
   transform: rotate(90deg);
 }
 
+.our-skills {
+  heigth: fit-content;
+  background: #F2E4E1;
+}
+.our-skills .our-skills-in {
+  padding: 7em 4em 6em 4em;
+}
+.our-skills .our-skills-in .our-skills-title {
+  margin-bottom: 12em;
+}
+.our-skills .our-skills-in .our-skills-title h1 {
+  font: bold 8em "Rubik", sans-serif;
+  text-align: center;
+  padding-bottom: 0.2em;
+  border-bottom: 0.2em solid black;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.our-skills .our-skills-in .our-skills-content .card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2em auto;
+}
+.our-skills .our-skills-in .our-skills-content .card:hover {
+  transition: ease-in-out 0.3s;
+  box-shadow: 15px 15px 15px black;
+  cursor: pointer;
+}
+.our-skills .our-skills-in .our-skills-content .card .card-body {
+  padding: 1vw;
+}
+.our-skills .our-skills-in .our-skills-content .card .card-title {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font: bold 2.6vw "Muli", sans-serif;
+}
+.our-skills .our-skills-in .our-skills-content .card .card-img-top {
+  padding: 3em 2em 2em 2em;
+}
+
 .interested {
   background: url(./Rectangle.png) center/cover no-repeat fixed;
   height: 100vh;
@@ -277,6 +319,10 @@
   border-bottom: 0.5rem solid black;
 }
 
+/* sosmed elements ------------------------------------------------------------------------------------------------------------------ */
+/* Form */
+/* End of form */
+/* end of sosmed -------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 576px) {
   .main-page .main-title {
     height: 80vh;
@@ -340,6 +386,22 @@
     height: 60vh;
   }
 
+  .our-skills .our-skills-in {
+    padding: 2em;
+  }
+  .our-skills .our-skills-in .our-skills-title {
+    margin-bottom: 2em;
+  }
+  .our-skills .our-skills-in .our-skills-title h1 {
+    font-size: 2em;
+  }
+  .our-skills .our-skills-in .card {
+    width: 80%;
+  }
+  .our-skills .our-skills-in .card .card-body .card-title {
+    font-size: 2em;
+  }
+
   .interested h2 {
     visibility: hidden;
   }
@@ -368,8 +430,83 @@
     width: 100%;
   }
 
+  .why-us .why-us-title {
+    margin-bottom: 3em;
+  }
+  .why-us .why-us-in {
+    flex-direction: column;
+    height: 80%;
+  }
+  .why-us .why-us-in .line {
+    height: 2em !important;
+  }
+  .why-us .why-us-in .line .line-in {
+    width: 10%;
+    margin: auto;
+  }
+
+  .testimonials .testimonials-in {
+    heigth: 55vh !important;
+  }
+  .testimonials .testimonials-in .quotes {
+    height: fit-content;
+  }
+  .testimonials .carousel-item img {
+    height: 55vh;
+  }
+
+  .our-skills .our-skills-in {
+    padding: 3em 4em 3em 4em;
+  }
+  .our-skills .our-skills-in .our-skills-title {
+    margin-bottom: 2em;
+  }
+  .our-skills .our-skills-in .our-skills-title h1 {
+    font-size: 3em;
+  }
+  .our-skills .our-skills-in .card .card-body .card-img-top {
+    padding: 0.5em;
+  }
+
+  .interested {
+    height: 45vh;
+  }
   .interested .interested-in h2 {
     visibility: hidden;
+  }
+
+  .location {
+    height: 30vh;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 1300px) {
+  .why-us {
+    height: fit-content;
+  }
+  .why-us .why-us-in {
+    height: 40vh;
+  }
+
+  .testimonials .testimonials-in {
+    heigth: 60vh !important;
+  }
+  .testimonials .testimonials-in .quotes {
+    height: fit-content;
+  }
+  .testimonials .carousel-item img {
+    height: 40vh;
+  }
+
+  .our-skills .our-skills-title h1 {
+    font-size: 5em !important;
+  }
+
+  .interested {
+    height: 40vh;
+  }
+
+  .location {
+    height: 35vh;
   }
 }
 @media (min-width: 576px) and (max-width: 990px) {
@@ -472,9 +609,14 @@
   .why-us .why-us-in {
     flex-direction: row !important;
     justify-content: center !important;
+    align-items: center;
   }
-  .why-us .why-us-in .line-in {
+  .why-us .why-us-in .line {
+    height: fit-content !important;
+  }
+  .why-us .why-us-in .line .line-in {
     width: 100%;
+    height: 1em;
   }
 
   .testimonials .testimonials-title h1 {
@@ -484,10 +626,28 @@
     font-size: 6vh !important;
   }
 
-  .interested .interested-in {
-    flex-direction: row !important;
+  .our-skills .our-skills-in {
+    padding: 2em 3em;
+  }
+  .our-skills .our-skills-in .our-skills-title {
+    margin-bottom: 2em;
+  }
+  .our-skills .our-skills-in .our-skills-title h1 {
+    font-size: 4em;
   }
 
+  .interested {
+    height: fit-content;
+    padding: 2em !important;
+  }
+  .interested .interested-in {
+    flex-direction: row !important;
+    margin-top: 3em;
+  }
+
+  .location {
+    height: 60vh;
+  }
   .location .location-box {
     padding: 1em !important;
   }

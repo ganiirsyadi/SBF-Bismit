@@ -28,8 +28,10 @@
 			color: #FFB736
 	.main-title
 		height: 90%
-		width: 100vw
+		width: 100%
 		text-align: center
+		margin: 0
+		padding: 0
 		img:hover
 			cursor: pointer
 		h1,h2
@@ -199,6 +201,38 @@
 			.carousel-control-next-icon
 				transform: rotate(90deg)
 
+.our-skills
+	heigth: fit-content
+	background: #F2E4E1
+	.our-skills-in
+		padding: 7em 4em 6em 4em
+		.our-skills-title
+			margin-bottom: 12em
+			h1
+				font: bold 8em 'Rubik', sans-serif
+				text-align: center
+				padding-bottom: 0.2em
+				border-bottom: 0.2em solid black
+				width: fit-content
+				margin: 0
+				padding: 0
+		.our-skills-content
+			.card
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+				margin: 2em auto
+				&:hover
+					transition: ease-in-out 0.3s
+					box-shadow: 15px 15px 15px rgba(0, 0, 0, 1)	
+					cursor: pointer		
+				.card-body
+					padding: 1vw
+				.card-title
+					text-align: center
+					text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+					font: bold 2.6vw 'Muli', sans-serif
+				.card-img-top
+					padding: 3em 2em 2em 2em
+
 .interested
 	background: url(./Rectangle.png) (center / cover) no-repeat fixed
 	height: 100vh
@@ -230,7 +264,90 @@
 		h1
 			border-bottom: 0.5rem solid black
 
-		
+/* sosmed elements ------------------------------------------------------------------------------------------------------------------
+
+// .sosmed
+	background: #292533
+	position: relative
+
+
+/* Form
+
+// form
+// 	margin-top: 2.5em
+// 	width: 41em
+
+// textarea
+// 	width: 100%
+// 	height: 10em
+
+// input, textarea
+// 	background: none
+// 	border: 1.5px solid grey
+
+// input
+// 	&[type=text]
+// 		margin-right: .7em
+// 		width: 20em
+// 		height: 2.5em
+
+// 	&[type=email]
+// 		width: 20em
+// 		height: 2.5em
+
+// textarea::placeholder
+// 	padding-left: 1em
+// 	color: white
+// 	padding-top: .5em
+// 	font-size: 1.3em
+
+// input
+// 	&[type=text]::placeholder, &[type=email]::placeholder
+// 		padding-left: 1em
+// 		color: white
+// 		padding-top: .5em
+// 		font-size: 1.3em
+
+// #id
+// 	margin-bottom: 1.5em
+
+// #email
+// 	padding: 2.5em
+// 	padding-top: 5em
+
+// #submitBtn button
+// 	background: #463056
+// 	border: none
+// 	color: white
+// 	padding-left: 2.5em
+// 	padding-right: 2.5em
+// 	margin-top: .5em
+// 	width: 11em
+// 	height: 2.5em
+// 	font-size: 1.3em
+
+// #form_title
+// 	width: 100%
+
+// 	img
+// 		max-width: 5em
+// 		height: auto
+// 		margin: 0 .7em
+
+// 	h1
+// 		width: 6.5em
+// 		color: white
+// 		font-family: "rubik"
+// 		font-size: 2em
+// 		padding-bottom: .3em
+// 		letter-spacing: 1.5px
+// 		border-bottom: 8px solid white
+// 		font-weight: 900
+
+/* End of form
+/* end of sosmed --------------------------------------------------------------------------------------------------------------------
+
+
 // Phone Potrait
 @media (max-width: 576px)
 	.main-page 
@@ -284,6 +401,20 @@
 			img
 				height: 60vh
 
+	.our-skills
+		.our-skills-in
+			padding: 2em
+			.our-skills-title
+				margin-bottom: 2em
+				h1
+					font-size: 2em
+			.card
+				width: 80%
+				.card-body
+					.card-title
+						font-size: 2em
+
+
 	.interested h2
 		visibility: hidden
 	.location .location-in
@@ -308,11 +439,73 @@
 					text-align: center
 					font-size: 2em
 					width:100%
+	
+	.why-us
+		.why-us-title
+			margin-bottom: 3em
+		.why-us-in
+			flex-direction: column
+			height: 80%
+			.line
+				height: 2em !important
+				.line-in
+					width: 10%
+					margin: auto
 
+	.testimonials
+		.testimonials-in
+			heigth: 55vh !important
+			.quotes
+				height: fit-content
+		.carousel-item
+			img
+				height: 55vh
+
+	.our-skills
+		.our-skills-in
+			padding: 3em 4em 3em 4em
+			.our-skills-title
+				margin-bottom: 2em
+				h1
+					font-size: 3em
+			.card
+				.card-body
+					.card-img-top
+						padding: 0.5em
+		
 	.interested
-			.interested-in
-				h2
-					visibility: hidden
+		height: 45vh
+		.interested-in
+			h2
+				visibility: hidden
+
+	.location
+		height: 30vh
+
+// ipad pro
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 1300px)
+	.why-us
+		height: fit-content
+		.why-us-in
+			height: 40vh
+
+	.testimonials
+		.testimonials-in
+			heigth: 60vh !important
+			.quotes
+				height: fit-content
+		.carousel-item
+			img
+				height: 40vh
+	.our-skills
+		.our-skills-title
+			h1
+				font-size: 5em !important
+	.interested
+		height: 40vh
+	.location
+		height: 35vh
+
 
 @media  (min-width: 576px) and (max-width: 990px)
 	.main-page
@@ -404,8 +597,12 @@
 		.why-us-in
 			flex-direction: row !important
 			justify-content: center !important
-			.line-in
-				width: 100%
+			align-items: center
+			.line
+				height: fit-content !important
+				.line-in
+					width: 100%
+					height: 1em
 	.testimonials
 		.testimonials-title
 			h1
@@ -414,10 +611,21 @@
 			.quotes-in
 				h2
 					font-size: 6vh !important
+	.our-skills
+		.our-skills-in
+			padding: 2em 3em
+			.our-skills-title
+				margin-bottom: 2em
+				h1
+					font-size: 4em
 	.interested
+		height: fit-content
+		padding: 2em !important
 		.interested-in
 			flex-direction: row !important
+			margin-top: 3em
 	.location
+		height: 60vh
 		.location-box
 			padding: 1em !important
 			h1
