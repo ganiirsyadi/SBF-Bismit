@@ -94,7 +94,7 @@
 }
 
 .why-us {
-  height: 100vh;
+  height: fit-content;
   background: #989CB6;
 }
 .why-us .why-us-title h1 {
@@ -108,7 +108,7 @@
   color: #292533;
 }
 .why-us .why-us-in {
-  height: 60vh;
+  height: fit-content !important;
 }
 .why-us .why-us-in .circle {
   text-align: center;
@@ -128,7 +128,7 @@
 }
 
 .testimonials {
-  height: 100vh;
+  height: fit-content;
   position: relative;
   background: #666666;
 }
@@ -157,7 +157,7 @@
   width: 80vw;
 }
 .testimonials .testimonials-in .quotes .quotes-in {
-  height: 60%;
+  height: fit-content;
 }
 .testimonials .testimonials-in .quotes .quotes-in h2 {
   font-size: 3vw;
@@ -166,6 +166,7 @@
   font-style: italic;
   font-family: "Muli", sans-serif;
   font-weight: bold;
+  margin: 5vw 0;
 }
 .testimonials .testimonials-in .quotes .quotes-in .quote-left {
   align-self: flex-start;
@@ -262,11 +263,17 @@
     margin: 1em 0;
   }
 
+  .testimonials .testimonials-in {
+    height: 70vh;
+  }
   .testimonials .testimonials-title h1 {
     font-size: 9vw !important;
   }
   .testimonials .quotes .quotes-in h2 {
     font-size: 6vw !important;
+  }
+  .testimonials .carousel-item img {
+    height: 70vh;
   }
 
   .interested h2 {
@@ -350,14 +357,14 @@
     width: 50%;
   }
   .main-page .main-title h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .main-page .main-title h2 {
-    font-size: 1.3em;
-    margin-bottom: 1em !important;
+    font-size: 1.2em;
+    margin-bottom: 0.6em !important;
   }
   .main-page .main-title button {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .finished-projects .finished-in .container {
@@ -369,6 +376,7 @@
     display: none;
   }
   .finished-projects #finished-special {
+    font-size: 2.5em;
     display: block;
     margin-top: 1em;
   }
@@ -381,12 +389,36 @@
   .why-us h1 {
     font-size: 2em;
   }
+  .why-us .why-us-in {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  .why-us .why-us-in .line-in {
+    width: 100%;
+  }
 
   .testimonials .testimonials-title h1 {
     font-size: 9vh !important;
   }
   .testimonials .quotes .quotes-in h2 {
     font-size: 6vh !important;
+  }
+
+  .interested .interested-in {
+    flex-direction: row !important;
+  }
+
+  .location .location-box {
+    padding: 1em !important;
+  }
+  .location .location-box h1 {
+    padding-bottom: 2vh !important;
+  }
+  .location .location-box .wrapper {
+    margin: 0.7em 0 !important;
+  }
+  .location .location-box .wrapper p {
+    font-size: 1em;
   }
 }
 @media (orientation: landscape) and (min-width: 640px) and (max-width: 990px) {
