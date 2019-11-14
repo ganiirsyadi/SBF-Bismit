@@ -262,11 +262,12 @@
                 <img src="./logo-bismit-footer.png" alt="" srcset="">
                 <img src="./logo-bem-footer.png" alt="" srcset="">
             </div>
+            <form method="post" action="send_mail.php" class=""></form>
             <div class="reach-us-email d-flex">
-                <input type="text" class="" placeholder="Name">
-                <input type="text" class="" placeholder="Email">
+                <input type="text" name="first_name" required class="" placeholder="Name">
+                <input type="email" name="email_address" class="" placeholder="Email">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+            <textarea name="comments" maxlength="500" cols="30" rows="10" placeholder="Type your message here..."></textarea>
             <button class="btn">Submit</button>
         </div>
     </section>
