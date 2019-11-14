@@ -264,90 +264,62 @@
 		h1
 			border-bottom: 0.5rem solid black
 
-/* sosmed elements ------------------------------------------------------------------------------------------------------------------
-
-// .sosmed
+.reach-us
+	height: fit-content
 	background: #292533
-	position: relative
-
-
-/* Form
-
-// form
-// 	margin-top: 2.5em
-// 	width: 41em
-
-// textarea
-// 	width: 100%
-// 	height: 10em
-
-// input, textarea
-// 	background: none
-// 	border: 1.5px solid grey
-
-// input
-// 	&[type=text]
-// 		margin-right: .7em
-// 		width: 20em
-// 		height: 2.5em
-
-// 	&[type=email]
-// 		width: 20em
-// 		height: 2.5em
-
-// textarea::placeholder
-// 	padding-left: 1em
-// 	color: white
-// 	padding-top: .5em
-// 	font-size: 1.3em
-
-// input
-// 	&[type=text]::placeholder, &[type=email]::placeholder
-// 		padding-left: 1em
-// 		color: white
-// 		padding-top: .5em
-// 		font-size: 1.3em
-
-// #id
-// 	margin-bottom: 1.5em
-
-// #email
-// 	padding: 2.5em
-// 	padding-top: 5em
-
-// #submitBtn button
-// 	background: #463056
-// 	border: none
-// 	color: white
-// 	padding-left: 2.5em
-// 	padding-right: 2.5em
-// 	margin-top: .5em
-// 	width: 11em
-// 	height: 2.5em
-// 	font-size: 1.3em
-
-// #form_title
-// 	width: 100%
-
-// 	img
-// 		max-width: 5em
-// 		height: auto
-// 		margin: 0 .7em
-
-// 	h1
-// 		width: 6.5em
-// 		color: white
-// 		font-family: "rubik"
-// 		font-size: 2em
-// 		padding-bottom: .3em
-// 		letter-spacing: 1.5px
-// 		border-bottom: 8px solid white
-// 		font-weight: 900
-
-/* End of form
-/* end of sosmed --------------------------------------------------------------------------------------------------------------------
-
-
+	padding: 2rem
+	.reach-us-in
+		width: 50rem
+		.reach-us-title
+			margin-bottom: 1.5rem
+			h1
+				font: bold 2.5rem 'Rubik', sans-serif
+				color: #fff
+				border-bottom: 0.4rem solid #fff
+			img
+				margin: 0 1rem
+		.reach-us-email
+			width: 100%
+			justify-content: space-between
+			margin-bottom: 1rem
+			input
+				height: 3rem
+				background: none
+				border: 1px solid #fff
+				width: 48.5%
+				padding: 0 1rem
+				color: #fff
+				font: bold 1.3rem 'Muli'
+				&::placeholder, &:focus
+					color: #fff
+					font: bold 1.3rem 'Muli'
+		textarea
+			width: 100%
+			background: none
+			padding: 1rem
+			border: 1px solid #fff
+			margin-bottom: 1rem
+			color: #fff
+			font: bold 1.3rem 'Muli'
+			&::placeholder, &:focus
+				color: #fff
+				font: bold 1.3rem 'Muli'
+		button
+			border-radius: 0
+			background: #463056
+			color: #fff
+			font: bold 1.3rem 'Muli'
+			padding: 0.5rem 4rem
+			align-self: flex-end
+	
+footer
+	heigth: fit-content
+	padding: 0.8rem
+	background: #000
+	font: bold 1rem 'Muli'
+	color: #fff
+	text-align: center
+		
 // Phone Potrait
 @media (max-width: 576px)
 	.main-page 
@@ -417,14 +389,35 @@
 
 	.interested h2
 		visibility: hidden
-	.location .location-in
-		.location-box
-			h1
-				font-size: 3em
-			img
-				width: 20%
-			p
-				font-size: 1.5em
+	.location 
+		.location-in
+			.location-box
+				display: none !important
+				h1
+					font-size: 3em
+				img
+					width: 20%
+				p
+					font-size: 1.5em
+	
+	.reach-us
+		.reach-us-in
+			width: 100%
+			.reach-us-title
+				h1
+					font-size: 1.5em
+					border-bottom: 0.2rem solid #fff
+				img
+					width: 3rem !important
+					margin: 0 0.5rem !important
+			.reach-us-email
+				display: flex
+				flex-direction: column
+				input
+					width: 100%
+					margin: 0.2rem 0
+			textarea
+				height: 12srem
 
 // Ipad
 @media  (min-width: 576px) and (max-width: 768px)
@@ -481,6 +474,10 @@
 
 	.location
 		height: 30vh
+	
+	.reach-us
+		.reach-us-in
+			width: 100%
 
 // ipad pro
 @media (min-width: 769px) and (max-width: 1024px) and (min-height: 1300px)
