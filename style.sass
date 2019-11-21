@@ -26,6 +26,11 @@
 			text-shadow: 1px 1px 1px black
 		.active a
 			color: #FFB736
+		a:hover
+			transform: scale(1.2)
+		a:active
+			color: #0e0036
+
 	.main-title
 		height: 90%
 		width: 100%
@@ -40,9 +45,9 @@
 			font-family: 'Rubik', sans-serif
 			text-shadow: 1px 1px 1px black
 		h1
-			font-size: 4em
+			font-size: 3em
 		h2
-			font-size: 2.5em
+			font-size: 2em
 		button
 			border-radius: 0
 			background: #FFB736
@@ -50,15 +55,16 @@
 			font-weight: bold
 			padding: 0.7em 3em
 			border: none
+			transition-duration: 1s
 			&:hover
-				background: #df9f29
+				background: #b97901
 				cursor: pointer
 
 .who-are-we
 	height: fit-content
 	background: #292B36
 	.who-are-we-in
-		padding: 3rem 3rem 4rem 5rem
+		padding: 3rem 6rem 4rem 6rem
 		h1
 			font-size: 4em
 			font-family: 'Rubik', sans-serif
@@ -89,12 +95,12 @@
 
 
 .finished-projects
-	height: fit-content
+	height: 100vh
 	padding-bottom: 4em
 	background: #C3C1CC
 	h1
 		font-family: 'Rubik', sans-serif
-		margin: 2vw auto
+		margin: 2vw auto 0 auto
 		font-weight: bold !important
 		font-size: 9em
 		color: #ffffff
@@ -103,7 +109,7 @@
 		font-family: 'Rubik', sans-serif
 		font-size: 3em
 		font-weight: bold
-		margin-bottom: 1.5em
+		margin-bottom: 3em
 		color: #ffffff
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	#finished-special
@@ -111,11 +117,14 @@
 		
 
 .why-us
-	height: 90vh
-	background: #989CB6
+	height: 100vh
+	background: url(./images/grey-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
 	.why-us-title
 		h1
 			text-align: center
+			margin: 1em
 			font-size: 3em
 			padding: 0.7em 0 0.2em 0
 			border-bottom: 0.15em solid black
@@ -131,15 +140,24 @@
 			width: 14em
 			height: 14em
 			padding: 1em
+			border: 0.5em #ffffff solid
+			box-shadow: 0 0 1em rgba(0,0,0,0.5)
+			transition-duration: 0.5s
+			&:hover
+				transform: translateY(-1em)
+				box-shadow: 0 0 1.5em rgba(0,0,0,0.4)
 			h2
 				font-family: 'Muli'
 				font-weight: bold
 				margin: 0 !important
-
-		.line-in
-			border: 0.3em white solid
-			background: #ffffff
-			width: 100%
+				font-size: 1.5em
+				color: #ffffff
+		.circle-1
+			background: #20D8B3
+		.circle-2
+			background: #EF767A
+		.circle-3
+			background: #7D7ABC
 
 .testimonials
 	height: fit-content
@@ -193,7 +211,7 @@
 			width: 10vw
 			z-index: 4
 			.carousel-control-prev-icon, .carousel-control-next-icon
-				background-image: url(./arrow.png)
+				background-image: url(./images/arrow.png)
 				width: 3vw
 				height: 3vw
 			.carousel-control-prev-icon
@@ -205,36 +223,38 @@
 	heigth: fit-content
 	background: #F2E4E1
 	.our-skills-in
-		padding: 7em 4em 6em 4em
+		padding: 7em 15vw 6em 15vw
 		.our-skills-title
-			margin-bottom: 12em
+			margin-bottom: 8em
 			h1
-				font: bold 8em 'Rubik', sans-serif
+				font: bold 4em 'Rubik', sans-serif
 				text-align: center
 				padding-bottom: 0.2em
 				border-bottom: 0.2em solid black
 				width: fit-content
 				margin: 0
 				padding: 0
+				text-shadow: 0px 4px 4px #ccc
 		.our-skills-content
 			.card
 				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 				margin: 2em auto
+				width: 17vw
 				&:hover
 					transition: ease-in-out 0.3s
-					box-shadow: 15px 15px 15px rgba(0, 0, 0, 1)	
+					box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4)	
 					cursor: pointer		
 				.card-body
 					padding: 1vw
 				.card-title
 					text-align: center
 					text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-					font: bold 2.6vw 'Muli', sans-serif
+					font: bold 1.4vw 'Muli', sans-serif
 				.card-img-top
 					padding: 3em 2em 2em 2em
 
 .interested
-	background: url(./Rectangle.png) (center / cover) no-repeat fixed
+	background: url(./images/Rectangle.png) (center / cover) no-repeat fixed
 	height: 100vh
 
 	.title
