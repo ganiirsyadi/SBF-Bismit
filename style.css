@@ -19,6 +19,7 @@
   cursor: pointer;
 }
 .main-page .carousel-inner img {
+  object-fit: cover;
   height: 100vh;
   width: 100vw;
 }
@@ -82,7 +83,7 @@
   background: #292B36;
 }
 .who-are-we .who-are-we-in {
-  padding: 3rem 6rem 4rem 6rem;
+  padding: 3rem 10rem 4rem 10rem;
 }
 .who-are-we .who-are-we-in h1 {
   font-size: 4em;
@@ -118,13 +119,13 @@
 }
 
 .finished-projects {
-  height: 100vh;
+  min-height: 100vh;
   padding-bottom: 4em;
   background: #C3C1CC;
 }
 .finished-projects h1 {
   font-family: "Rubik", sans-serif;
-  margin: 2vw auto 0 auto;
+  margin: 0.3em auto 0 auto;
   font-weight: bold !important;
   font-size: 9em;
   color: #ffffff;
@@ -141,26 +142,29 @@
 .finished-projects #finished-special {
   display: none;
 }
+.finished-projects .finished-logo img {
+  margin: 1em;
+  object-fit: contain;
+}
 
 .why-us {
   height: 100vh;
   background: url(./images/grey-bg.png);
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
 }
 .why-us .why-us-title h1 {
   text-align: center;
-  margin: 1em;
-  font-size: 3em;
+  margin: 0.5em auto 0.5em auto;
+  font-size: 4em;
   padding: 0.7em 0 0.2em 0;
-  border-bottom: 0.15em solid black;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #292533;
 }
 .why-us .why-us-in {
-  height: 80vh;
+  height: 60vh;
 }
 .why-us .why-us-in .circle {
   text-align: center;
@@ -168,8 +172,8 @@
   width: 14em;
   height: 14em;
   padding: 1em;
-  border: 0.5em #ffffff solid;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  border: 0.3em #ffffff solid;
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
   transition-duration: 0.5s;
 }
 .why-us .why-us-in .circle:hover {
@@ -184,17 +188,17 @@
   color: #ffffff;
 }
 .why-us .why-us-in .circle-1 {
-  background: #20D8B3;
+  background: #777777;
 }
 .why-us .why-us-in .circle-2 {
-  background: #EF767A;
+  background: #555555;
 }
 .why-us .why-us-in .circle-3 {
-  background: #7D7ABC;
+  background: #333333;
 }
 
 .testimonials {
-  height: fit-content;
+  height: 100vh;
   position: relative;
   background: #666666;
 }
@@ -202,11 +206,12 @@
   position: absolute;
   z-index: 2;
   width: 100%;
+  height: 100vh;
 }
 .testimonials .testimonials-in .testimonials-title {
   position: block;
-  margin-top: 5vh;
-  height: 10vh;
+  margin-top: 5%;
+  height: 10%;
 }
 .testimonials .testimonials-in .testimonials-title h1 {
   color: #ffffff;
@@ -219,7 +224,7 @@
 }
 .testimonials .testimonials-in .quotes {
   position: block;
-  height: 85vh;
+  height: 85%;
   width: 80vw;
 }
 .testimonials .testimonials-in .quotes .quotes-in {
@@ -246,6 +251,7 @@
   transform: rotate(180deg);
 }
 .testimonials .carousel-item img {
+  object-fit: cover;
   height: 100vh;
 }
 .testimonials #carousel-testimonials a {
@@ -309,6 +315,7 @@
 
 .interested {
   background: url(./images/Rectangle.png) center/cover no-repeat fixed;
+  object-fit: cover;
   height: 100vh;
 }
 .interested .title {
@@ -413,6 +420,9 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .main-page {
+    height: 100vh;
+  }
   .main-page .main-title {
     height: 80vh;
   }
@@ -421,6 +431,10 @@ footer {
   }
   .main-page .main-title h2 {
     font-size: 1.5em;
+  }
+
+  .carousel img {
+    height: 100vh;
   }
 
   #carousel-testimonials a .carousel-control-prev-icon, #carousel-testimonials .carousel-control-next-icon {
@@ -453,46 +467,72 @@ footer {
   }
   .finished-projects .finished-in h2 {
     font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .finished-projects .finished-logo {
+    flex-direction: column;
   }
   .finished-projects .finished-logo img {
-    margin: 1em 0;
+    margin: 0.5em;
   }
 
   .why-us {
     height: fit-content;
   }
+  .why-us .why-us-title h1 {
+    font-size: 3em;
+  }
 
   .testimonials .testimonials-in {
-    height: 60vh;
+    height: 100vh;
   }
   .testimonials .testimonials-title h1 {
     font-size: 9vw !important;
+  }
+  .testimonials .quotes {
+    height: 70vh;
   }
   .testimonials .quotes .quotes-in h2 {
     font-size: 6vw !important;
   }
   .testimonials .carousel-item img {
-    height: 60vh;
+    height: 100vh;
   }
 
+  .our-skills {
+    height: 100vh;
+  }
   .our-skills .our-skills-in {
-    padding: 2em;
+    height: 100%;
+    padding: 3em;
   }
   .our-skills .our-skills-in .our-skills-title {
     margin-bottom: 2em;
   }
   .our-skills .our-skills-in .our-skills-title h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
   }
-  .our-skills .our-skills-in .card {
-    width: 80%;
+  .our-skills .our-skills-in .our-skills-content {
+    margin-bottom: 1em;
   }
-  .our-skills .our-skills-in .card .card-body .card-title {
-    font-size: 2em;
+  .our-skills .our-skills-in .our-skills-content .card {
+    width: 20vw;
+    margin: 0;
+  }
+  .our-skills .our-skills-in .our-skills-content .card .card-img-top {
+    padding: 0.5em;
+  }
+  .our-skills .our-skills-in .our-skills-content .card .card-body .card-title {
+    font-size: 0.7em;
   }
 
   .interested h2 {
     visibility: hidden;
+  }
+  .interested .row h1 {
+    opacity: 0;
   }
 
   .location .location-in .location-box {
@@ -797,6 +837,11 @@ footer {
 @media (min-width: 768px) {
   .interested .title {
     font-size: 5em;
+  }
+
+  .interested h1 {
+    font-size: 8em;
+    font-weight: 100;
   }
 
   .location-box h1 {

@@ -14,6 +14,7 @@
 		border-radius: 100%
 		cursor: pointer
 	.carousel-inner img
+		object-fit: cover
 		height: 100vh
 		width: 100vw
 	nav
@@ -64,7 +65,7 @@
 	height: fit-content
 	background: #292B36
 	.who-are-we-in
-		padding: 3rem 6rem 4rem 6rem
+		padding: 3rem 10rem 4rem 10rem
 		h1
 			font-size: 4em
 			font-family: 'Rubik', sans-serif
@@ -95,12 +96,12 @@
 
 
 .finished-projects
-	height: 100vh
+	min-height: 100vh
 	padding-bottom: 4em
 	background: #C3C1CC
 	h1
 		font-family: 'Rubik', sans-serif
-		margin: 2vw auto 0 auto
+		margin: 0.3em auto 0 auto
 		font-weight: bold !important
 		font-size: 9em
 		color: #ffffff
@@ -114,34 +115,37 @@
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	#finished-special
 		display: none
+	.finished-logo
+		img
+			margin: 1em
+			object-fit: contain
 		
 
 .why-us
 	height: 100vh
 	background: url(./images/grey-bg.png)
-	background-size: cover
+	object-fit: cover
 	background-repeat: no-repeat
 	.why-us-title
 		h1
 			text-align: center
-			margin: 1em
-			font-size: 3em
+			margin: 0.5em auto 0.5em auto
+			font-size: 4em
 			padding: 0.7em 0 0.2em 0
-			border-bottom: 0.15em solid black
 			font-family: 'Rubik', sans-serif
 			font-weight: bold
 			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 			color: #292533
 	.why-us-in
-		height: 80vh
+		height: 60vh
 		.circle
 			text-align: center
 			background: #ffffff
 			width: 14em
 			height: 14em
 			padding: 1em
-			border: 0.5em #ffffff solid
-			box-shadow: 0 0 1em rgba(0,0,0,0.5)
+			border: 0.3em #ffffff solid
+			box-shadow: 0 1em 1em rgba(0,0,0,0.5)
 			transition-duration: 0.5s
 			&:hover
 				transform: translateY(-1em)
@@ -153,24 +157,25 @@
 				font-size: 1.5em
 				color: #ffffff
 		.circle-1
-			background: #20D8B3
+			background: #777777
 		.circle-2
-			background: #EF767A
+			background: #555555
 		.circle-3
-			background: #7D7ABC
+			background: #333333
 
 .testimonials
-	height: fit-content
+	height: 100vh
 	position: relative
 	background: #666666
 	.testimonials-in
 		position: absolute
 		z-index: 2
 		width: 100%
+		height: 100vh
 		.testimonials-title
 			position: block
-			margin-top: 5vh
-			height: 10vh
+			margin-top: 5%
+			height: 10%
 			h1
 				color: #ffffff
 				font-size: 4vw
@@ -181,7 +186,7 @@
 				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 		.quotes
 			position: block
-			height: 85vh
+			height: 85%
 			width: 80vw
 			.quotes-in
 				height: fit-content
@@ -204,6 +209,7 @@
 					transform: rotate(180deg)
 	.carousel-item
 		img
+			object-fit: cover
 			height: 100vh
 	#carousel-testimonials
 		a
@@ -255,8 +261,8 @@
 
 .interested
 	background: url(./images/Rectangle.png) (center / cover) no-repeat fixed
+	object-fit: cover
 	height: 100vh
-
 	.title
 		border-bottom: 0.5rem solid black
 
@@ -343,12 +349,16 @@ footer
 // Phone Potrait
 @media (max-width: 576px)
 	.main-page 
+		height: 100vh
 		.main-title 
 			height: 80vh
 			h1
 				font-size: 2.5em
 			h2
 				font-size: 1.5em
+	.carousel 
+		img
+			height: 100vh
 	#carousel-testimonials
 		a .carousel-control-prev-icon, .carousel-control-next-icon
 			width: 4vw
@@ -374,41 +384,61 @@ footer
 				font-size: 7em
 			h2
 				font-size: 2em
+				margin-bottom: 1em
 		.finished-logo
+			flex-direction: column
 			img
-				margin: 1em 0
+				margin: 0.5em
 	.why-us
 		height: fit-content
+		.why-us-title
+			h1
+				font-size: 3em
 	.testimonials
 		.testimonials-in
-			height: 60vh
+			height: 100vh
 		.testimonials-title
 			h1
 				font-size: 9vw !important
 		.quotes
+			height: 70vh
 			.quotes-in
 				h2
 					font-size: 6vw !important
 		.carousel-item
 			img
-				height: 60vh
+				height: 100vh
 
 	.our-skills
+		height: 100vh
 		.our-skills-in
-			padding: 2em
+			height: 100%
+			padding: 3em
 			.our-skills-title
 				margin-bottom: 2em
 				h1
-					font-size: 2em
-			.card
-				width: 80%
-				.card-body
-					.card-title
-						font-size: 2em
+					font-size: 2.5em
+					margin-top: 1em
+					margin-bottom: 1.5em
+			.our-skills-content
+				margin-bottom: 1em
+				.card
+					width: 20vw
+					margin: 0
+					.card-img-top
+						padding: 0.5em
+					.card-body
+						.card-title
+							font-size: 0.7em
 
 
-	.interested h2
-		visibility: hidden
+	.interested 
+		h2
+			visibility: hidden
+		.row
+			h1
+				opacity: 0
+	
 	.location 
 		.location-in
 			.location-box
@@ -668,8 +698,14 @@ footer
 					margin: 0
 
 @media (min-width: 768px)
-	.interested .title
-		font-size: 5em
+	.interested 
+		.title
+			font-size: 5em
+	.interested
+		h1
+			font-size: 8em
+			font-weight: 100
+	
 	.location-box
 		h1
 			font-size: 4em
