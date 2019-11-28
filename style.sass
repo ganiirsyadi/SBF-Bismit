@@ -184,29 +184,6 @@
 				border-bottom: 0.15em #ffffff solid
 				font-weight: bold
 				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-		.quotes
-			position: block
-			height: 85%
-			width: 80vw
-			.quotes-in
-				height: fit-content
-				h2
-					font-size: 3vw
-					color: #ffffff
-					text-align: center
-					font-style: italic
-					font-family: 'Muli', sans-serif
-					font-weight: bold
-					margin: 5vw 0
-				.quote-left
-					align-self: flex-start
-					width: 5vw
-					height: auto
-				.quote-right
-					align-self: flex-end
-					width: 5vw
-					height: auto
-					transform: rotate(180deg)
 	.carousel-item
 		img
 			object-fit: cover
@@ -217,7 +194,10 @@
 			width: 80vw
 			.quotes-in
 				height: fit-content
-				transform: translateY(-50%)
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-content: center
 				h2
 					font-size: 3vw
 					color: #ffffff
@@ -226,15 +206,6 @@
 					font-family: 'Muli', sans-serif
 					font-weight: bold
 					margin: 5vw 0
-				.quote-left
-					align-self: flex-start
-					width: 5vw
-					height: auto
-				.quote-right
-					align-self: flex-end
-					width: 5vw
-					height: auto
-					transform: rotate(180deg)
 
 	#carousel-testimonials
 		a
@@ -426,10 +397,10 @@ footer
 			h1
 				font-size: 9vw !important
 		.quotes
-			height: 70vh
 			.quotes-in
 				h2
 					font-size: 6vw !important
+					transform: translateY(-50%)
 		.carousel-item
 			img
 				height: 100vh
@@ -508,26 +479,25 @@ footer
 					font-size: 2em
 					width:100%
 	
+	.finished-logo
+		flex-direction: column
+		img
+			margin: 0.5em
+
+	
 	.why-us
 		.why-us-title
 			margin-bottom: 3em
 		.why-us-in
 			flex-direction: column
 			height: 80%
-			.line
-				height: 2em !important
-				.line-in
-					width: 10%
-					margin: auto
 
 	.testimonials
 		.testimonials-in
-			heigth: 55vh !important
-			.quotes
-				height: fit-content
+			height: 100vh
 		.carousel-item
 			img
-				height: 55vh
+				height: 100vh
 
 	.our-skills
 		.our-skills-in

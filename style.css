@@ -222,34 +222,6 @@
   font-weight: bold;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.testimonials .testimonials-in .quotes {
-  position: block;
-  height: 85%;
-  width: 80vw;
-}
-.testimonials .testimonials-in .quotes .quotes-in {
-  height: fit-content;
-}
-.testimonials .testimonials-in .quotes .quotes-in h2 {
-  font-size: 3vw;
-  color: #ffffff;
-  text-align: center;
-  font-style: italic;
-  font-family: "Muli", sans-serif;
-  font-weight: bold;
-  margin: 5vw 0;
-}
-.testimonials .testimonials-in .quotes .quotes-in .quote-left {
-  align-self: flex-start;
-  width: 5vw;
-  height: auto;
-}
-.testimonials .testimonials-in .quotes .quotes-in .quote-right {
-  align-self: flex-end;
-  width: 5vw;
-  height: auto;
-  transform: rotate(180deg);
-}
 .testimonials .carousel-item img {
   object-fit: cover;
   height: 100vh;
@@ -261,7 +233,10 @@
 }
 .testimonials .carousel-item .quotes .quotes-in {
   height: fit-content;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .testimonials .carousel-item .quotes .quotes-in h2 {
   font-size: 3vw;
@@ -271,17 +246,6 @@
   font-family: "Muli", sans-serif;
   font-weight: bold;
   margin: 5vw 0;
-}
-.testimonials .carousel-item .quotes .quotes-in .quote-left {
-  align-self: flex-start;
-  width: 5vw;
-  height: auto;
-}
-.testimonials .carousel-item .quotes .quotes-in .quote-right {
-  align-self: flex-end;
-  width: 5vw;
-  height: auto;
-  transform: rotate(180deg);
 }
 .testimonials #carousel-testimonials a {
   position: absolute;
@@ -518,11 +482,9 @@ footer {
   .testimonials .testimonials-title h1 {
     font-size: 9vw !important;
   }
-  .testimonials .quotes {
-    height: 70vh;
-  }
   .testimonials .quotes .quotes-in h2 {
     font-size: 6vw !important;
+    transform: translateY(-50%);
   }
   .testimonials .carousel-item img {
     height: 100vh;
@@ -614,6 +576,13 @@ footer {
     width: 100%;
   }
 
+  .finished-logo {
+    flex-direction: column;
+  }
+  .finished-logo img {
+    margin: 0.5em;
+  }
+
   .why-us .why-us-title {
     margin-bottom: 3em;
   }
@@ -621,22 +590,12 @@ footer {
     flex-direction: column;
     height: 80%;
   }
-  .why-us .why-us-in .line {
-    height: 2em !important;
-  }
-  .why-us .why-us-in .line .line-in {
-    width: 10%;
-    margin: auto;
-  }
 
   .testimonials .testimonials-in {
-    heigth: 55vh !important;
-  }
-  .testimonials .testimonials-in .quotes {
-    height: fit-content;
+    height: 100vh;
   }
   .testimonials .carousel-item img {
-    height: 55vh;
+    height: 100vh;
   }
 
   .our-skills .our-skills-in {
