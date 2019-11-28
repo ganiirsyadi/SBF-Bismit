@@ -254,6 +254,35 @@
   object-fit: cover;
   height: 100vh;
 }
+.testimonials .carousel-item .quotes {
+  position: block;
+  height: 85%;
+  width: 80vw;
+}
+.testimonials .carousel-item .quotes .quotes-in {
+  height: fit-content;
+  transform: translateY(-50%);
+}
+.testimonials .carousel-item .quotes .quotes-in h2 {
+  font-size: 3vw;
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  margin: 5vw 0;
+}
+.testimonials .carousel-item .quotes .quotes-in .quote-left {
+  align-self: flex-start;
+  width: 5vw;
+  height: auto;
+}
+.testimonials .carousel-item .quotes .quotes-in .quote-right {
+  align-self: flex-end;
+  width: 5vw;
+  height: auto;
+  transform: rotate(180deg);
+}
 .testimonials #carousel-testimonials a {
   position: absolute;
   width: 10vw;
