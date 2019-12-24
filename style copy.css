@@ -28,7 +28,7 @@
   height: 10%;
 }
 .main-page nav a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ffffff;
   font-family: "Muli", sans-serif;
   text-shadow: 1px 1px 1px black;
@@ -37,7 +37,7 @@
   color: #FFB736;
 }
 .main-page nav a:hover {
-  transform: scale(0.95);
+  transform: scale(1.2);
 }
 .main-page nav a:active {
   color: #0e0036;
@@ -176,6 +176,10 @@
   box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
   transition-duration: 0.5s;
 }
+.why-us .why-us-in .circle:hover {
+  transform: translateY(-1em);
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.4);
+}
 .why-us .why-us-in .circle h2 {
   font-family: "Muli";
   font-weight: bold;
@@ -281,13 +285,13 @@
   text-shadow: 0px 4px 4px #ccc;
 }
 .our-skills .our-skills-in .our-skills-content .card {
-  box-shadow: 0px 4px 4px #999999;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 2em auto;
   width: 17vw;
 }
 .our-skills .our-skills-in .our-skills-content .card:hover {
   transition: ease-in-out 0.3s;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 .our-skills .our-skills-in .our-skills-content .card .card-body {
@@ -320,7 +324,7 @@
 }
 .interested button:hover {
   transition: ease-in-out 0.3s;
-  box-shadow: 5px 5px 5px #999999;
+  box-shadow: 7px 7px 7px black;
   background: white;
 }
 .interested a {
@@ -840,204 +844,4 @@ footer {
   }
 }
 
-/* Footer */
-
-/* location elements ----------------------------------------------------------------------------------------------------------------*/
-
-.location {
-  position: relative;
-}
-
-.locationElement {
-  height: 20em;
-}
-
-.google-maps {
-  position: relative;
-  /* This is the aspect ratio */
-  padding-bottom: 320px;
-  height: 0;
-  overflow: hidden;
-}
-
-.google-maps iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#locationTitle {
-  color: black;
-  text-shadow: 0px 4px 2.5px rgba(41, 37, 51, .2);
-  font-size: 2em;
-  font-weight: 900;
-  font-family: "rubik";
-  text-align: center;
-  margin-top: 1.5em;
-  padding-bottom: 15px;
-  border-bottom: 8px solid black;
-  width: 7.2em;
-}
-
-#locationLabel {
-  background: #FFB736;
-}
-
-#locationLabel img {
-  width: 3.2em;
-}
-
-#locationDesc {
-  margin-top: 2.8em;
-}
-
-#locationLabel h4 {
-  margin-top: .5em;
-  font-weight: bold;
-  font-size: 1.3em;
-  color: black;
-  text-align: center;
-}
-
-
-/* end of location ------------------------------------------------------------------------------------------------------------------*/
-
-.header {
-  display: flex;
-  justify-content: center;
-}
-
-
-/* Form  */
-
-.reach-us {
-  height: fit-content;
-  background: #292533;
-  padding: 2rem;
-  margin: 0;
-}
-
-.reach-us .reach-us-in {
-  width: 50rem;
-}
-
-.reach-us .reach-us-in .reach-us-title {
-  margin-bottom: 1.5rem;
-}
-
-.reach-us .reach-us-in .reach-us-title h1 {
-  font: bold 2.5rem "Rubik", sans-serif;
-  color: #fff;
-  margin-right: 1em;
-  border-bottom: 0.4rem solid #fff;
-}
-
-.reach-us .reach-us-in .reach-us-title img {
-  margin: 0 0.2rem;
-  height: auto;
-  width: 4em;
-}
-
-.reach-us .reach-us-in .reach-us-email {
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.reach-us .reach-us-in .reach-us-email input {
-  height: 3rem;
-  background: none;
-  border: 1px solid #fff;
-  width: 48.5%;
-  padding: 0 1rem;
-  color: #fff;
-  font: bold 1.3rem "Muli";
-}
-
-.reach-us .reach-us-in .reach-us-email input::placeholder,
-.reach-us .reach-us-in .reach-us-email input:focus {
-  color: #fff;
-  font: bold 1.3rem "Muli";
-}
-
-.reach-us .reach-us-in textarea {
-  width: 100%;
-  background: none;
-  padding: 1rem;
-  border: 1px solid #fff;
-  margin-bottom: 1rem;
-  color: #fff;
-  font: bold 1.3rem "Muli";
-}
-
-.reach-us .reach-us-in textarea::placeholder,
-.reach-us .reach-us-in textarea:focus {
-  color: #fff;
-  font: bold 1.3rem "Muli";
-}
-
-.reach-us .reach-us-in button {
-  border-radius: 0;
-  background: #463056;
-  color: #fff;
-  font: bold 1.3rem "Muli";
-  padding: 0.5rem 4rem;
-  align-self: flex-end;
-}
-
-.reach-us .reach-us-in button:hover {
-  background: #32223d;
-}
-
-footer {
-  heigth: fit-content;
-  padding: 0.8rem;
-  background: #000;
-  font: bold 1rem "Muli";
-  color: #fff;
-  text-align: center;
-}
-
-@media (max-width: 576px) {
-  .reach-us .reach-us-in {
-      width: 100%;
-  }
-  .reach-us .reach-us-in .reach-us-title h1 {
-      font-size: 1.5em;
-      border-bottom: 0.2rem solid #fff;
-  }
-  .reach-us .reach-us-in .reach-us-title img {
-      width: 3rem !important;
-      margin: 0 0.5rem !important;
-  }
-  .reach-us .reach-us-in .reach-us-email {
-      display: flex;
-      flex-direction: column;
-  }
-  .reach-us .reach-us-in .reach-us-email input {
-      width: 100%;
-      margin: 0.2rem 0;
-  }
-  .reach-us .reach-us-in textarea {
-      height: 12srem;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .reach-us .reach-us-in {
-      width: 100%;
-  }
-}
-
-div.linkBar div.link {
-  background: rgba(255, 255, 255, .65);
-  transition: all .2s;
-}
-
-div.linkBar div.link:hover {
-  background: white;
-  transition: all .2s;
-  cursor: pointer;
-}
+/*# sourceMappingURL=style.css.map */
