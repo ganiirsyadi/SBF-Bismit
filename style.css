@@ -992,7 +992,7 @@ footer {
 }
 
 footer {
-  heigth: fit-content;
+  height: fit-content;
   padding: 0.8rem;
   background: #000;
   font: bold 1rem "Muli";
@@ -1031,13 +1031,22 @@ footer {
   }
 }
 
-div.linkBar div.link {
+.linkBar .link {
   background: rgba(255, 255, 255, .65);
   transition: all .2s;
 }
 
-div.linkBar div.link:hover {
+.linkBar .link:hover {
   background: white;
   transition: all .2s;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .linkBar {
+    margin-top: 1.5em;
+  }
+  .linkBar .link img {
+    width: 1.8em
+  }
 }
